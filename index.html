@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3b8dba1cc0.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Protfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()" style="color: #ffffff;"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()" style="color: #ffffff;"></i>
+
+            </nav>
+            <div class="header-text">
+                <p>UI/UX Designer</p>
+                <h1>Hi, I'm <span>Suha</span> <br> Alrowaithi</h1>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="image/Abo.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Graduate in Information Technology.Passionate about web development and Ui/Ux and hopping to find
+                        a challenging opportunity to devote my modest knowledge
+                        and enthusiasm to contribute to the development of my future workplace Excited
+                        and eager to learn new things,I can work well both
+                        independently and in al team
+                    </p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('courses')">Courses</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Desingning web/App interfaces</li>
+                            <li><span>Web Development</span><br>Front-end devlopment</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="courses">
+                        <ul>
+                            <li><span>Techead</span><br>Introduction to digital information security </li>
+                            <li><span>Edrak</span><br>Building dashboard excel</li>
+                            <li><span>Satr</span><br>UI|UX</li>
+
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>Bechelor</span><br>Information Technology</li>
+                            <li><span>University</span><br>King Abdullaziz</li>
+                            <li><span>G.P.A</span><br>4.20</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code" style="color: #ffd43b;"></i>
+                    <h2>Web Design</h2>
+                    <p>web design is more than just pretty
+                        pictures arranged on your screen.
+                        A high-end website works to meet
+                        the interests and trends of your users
+                        and create a great digital experience for them</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop" style="color: #ffd43b;"></i>
+                    <h2>UI/UX</h2>
+                    <p>focuses on creating a seamless and meaningful
+                        user experience by understanding user needs,
+                        conducting research,and designing intuitive interfaces</p>
+                    <a href="#">Learn more</a>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    <!----------------here my work-------------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="image/png2.jpeg">
+                    <div class="layer">
+                        <h3>Ghaith website</h3>
+                        <p>I created the voiunteer website to make a positive impact
+                            on the community by using technology </p>
+                        <a href="image/USER INTERFACES1.pdf"><i class="fa-solid fa-arrow-up-right-from-square"
+                                style="color: #ffffff;"></i></a>
+                    </div>
+                </div>
+
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane" style="color: #ffd43b;"></i>Suhamn9x@gmail.com</p>
+                    <p><i class="fa-solid fa-phone" style="color: #ffd43b;"></i>+966552502348</p>
+                    <div class="social-icons">
+                        <a
+                            href="https://www.linkedin.com/in/suha-alrowaithi-590320198?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"><i
+                                class="fa-brands fa-linkedin" style="color: #ffd43b;"></i></a>
+                    </div>
+                    <a href="image/download-1.pdf" download class="btn btn2">Download Cv</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="Email" placeholder="Your Email" required>
+                        <textarea name="Massage" rows="6" placeholder="Your Massage"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright © Suha.Made with <i class="fa-regular fa-heart" style="color: #ffd43b;"></i> ...</p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tablink of tabcontents) {
+                tablink.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxOsVMxHvqq-8VcsATyrVYfEltU6npb3npIni-Asp_rpMi0OgfVutFmF8BVohXH51aZFw/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Massage sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
